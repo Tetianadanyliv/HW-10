@@ -1,0 +1,182 @@
+body {
+    background: url(http://wallpapers.net/web/wallpapers/purple-universe-hd-wallpaper/1280x800.jpg);
+display: flex;
+background-size: 100%;
+}
+.box {
+    display: flex;
+    flex-direction: row;
+}
+.jediswords{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 100px;
+margin: 0 auto;
+margin-top: 200px;
+margin-left: 50px;
+}
+
+.redsword {
+    display: flex;
+    width: 300px;
+    height: 15px;
+    background-color: rgb(223, 219, 219);
+    border-radius: 5px;
+    border: 1px solid white;
+    opacity: 80%;
+    box-shadow: 0 0 5px #ff867d, 0 0 5px #ff867d, 0 0 10px #ff867d, 0 0 100px #ff867d;
+    animation-name: redsword;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    margin-top: 10px;
+    translateY(n): 1;}
+
+@keyframes redsword {
+to {
+    rotate: -50deg;
+    background-color: rgb(194, 11, 51);
+    box-shadow: white;
+}
+}
+
+.sword1{
+    display: flex;
+    width: 50px;
+    background-color: rgba(77, 83, 83, 0.801);
+    justify-content: left;
+    border-radius: 5px;
+}
+
+.bluesword {
+    display: flex;
+    justify-content: right;
+    width: 300px;
+    height: 15px;
+    background-color: rgb(223, 219, 219);
+    border-radius: 5px;
+    border: 1px solid white;
+    opacity: 80%;
+    margin-top: 10px;
+    box-shadow: 0 0 5px #504dfa, 0 0 5px #504dfa, 0 0 10px #504dfa, 0 0 100px #504dfa;
+    animation-name: bluesword;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    
+}
+.sword2{
+    display: flex;
+    width: 50px;
+    background-color: rgba(77, 83, 83, 0.801);
+    
+    border-radius: 5px;
+
+}
+@keyframes bluesword {
+    to {
+        rotate: 50deg;
+        background-color: rgb(5, 42, 202);
+    
+    }
+    }
+
+.greensword {
+   display: flex;
+    width: 300px;
+    height: 15px;
+    background-color: rgb(223, 219, 219);
+    border-radius: 5px;
+    opacity: 80%;
+    border: 1px solid white;
+
+    margin-top: 10px;
+    box-shadow: 0 0 5px #50df0e, 0 0 5px #50df0e, 0 0 10px #50df0e, 0 0 100px #50df0e;
+    border-radius: 5px;
+    border-color: azure;
+    animation-name: greensword;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite; 
+}
+@keyframes greensword {
+
+    to {
+        transform: translateY(-100px);
+        opacity: 0;
+        background-color: rgb(29, 134, 38);
+
+    }
+    }
+
+ .newtonscradle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 100px;
+margin: 0 auto;
+margin-top: 200px;
+margin-left: 150px;
+ }
+
+
+    .ball {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: rgb(124, 126, 253);
+        border: 1px solid white;
+        box-shadow: 0 0 5px #50df0e, 0 0 5px #50df0e, 0 0 10px #50df0e, 0 0 100px #50df0e;
+    animation-name: ball1;
+    }
+    .ball1{
+        display: flex;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: rgb(124, 126, 253);
+        border: 1px solid white;
+        box-shadow: 0 0 5px #50df0e, 0 0 5px #50df0e, 0 0 10px #50df0e, 0 0 100px #50df0e;
+    animation-name: ball1;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite; 
+    }
+    
+    @keyframes ball1 {
+
+        to {
+             transform: translateX(-130%);
+            rotate: 50deg;
+        }
+    }
+    .ball2 {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: rgb(124, 126, 253);
+        border: 1px solid white;
+        box-shadow: 0 0 5px #50df0e, 0 0 5px #50df0e, 0 0 10px #50df0e, 0 0 100px #50df0e;
+    animation-name: ball2;
+    animation-duration: 1s; 
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    }
+    
+        @keyframes ball2 {
+
+            to {
+                 transform: translateX(130%);
+                rotate: -50deg;
+               
+            }
+            }
