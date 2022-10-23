@@ -122,18 +122,28 @@ margin: 0 auto;
 margin-top: 200px;
 margin-left: 150px;
  }
+.line {
+    display: flex;
+    position: absolute;
+    margin-bottom: 200px;
+    width: 260px;
+    height: 10px;
+    background-color: #d8d3d3;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #408afa, 0 0 5px #408afa, 0 0 10px #408afa, 0 0 100px #408afa;
+z-index: 1;
+}
 
+.box::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 80px;
+    background-color: rgb(226, 226, 226);
+    top: -80px;
+    left: 50%;}
 
-    .ball {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        background-color: rgb(124, 126, 253);
-        border: 1px solid white;
-        box-shadow: 0 0 5px #50df0e, 0 0 5px #50df0e, 0 0 10px #50df0e, 0 0 100px #50df0e;
-    animation-name: ball1;
-    }
-    .ball1{
+ .ball {
         display: flex;
         position: relative;
         width: 30px;
@@ -142,20 +152,31 @@ margin-left: 150px;
         background-color: rgb(124, 126, 253);
         border: 1px solid white;
         box-shadow: 0 0 5px #50df0e, 0 0 5px #50df0e, 0 0 10px #50df0e, 0 0 100px #50df0e;
-    animation-name: ball1;
+    animation-name: ball;
     animation-duration: 1s;
-    animation-delay: 2s;
-    animation-timing-function: ease-out;
     animation-direction: alternate;
     animation-iteration-count: infinite; 
     }
+
+    .ball1 {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: rgb(124, 126, 253);
+        border: 1px solid white;
+        box-shadow: 0 0 5px #50df0e, 0 0 5px #50df0e, 0 0 10px #50df0e, 0 0 100px #50df0e;
+    animation-name: ball1;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    }
+   
     
     @keyframes ball1 {
-
-        to {
-             transform: translateX(-130%);
-            rotate: 50deg;
-        }
+    0%   { transform: rotate(0deg); }
+    50%  { transform: rotate(0deg) }
+    100% { transform: rotate(30deg) translateX(-130%)  
+  }
     }
     .ball2 {
         width: 30px;
@@ -169,14 +190,12 @@ margin-left: 150px;
     animation-delay: 1s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-out;
+
     }
     
         @keyframes ball2 {
-
-            to {
-                 transform: translateX(130%);
-                rotate: -50deg;
-               
-            }
-            }
+            0%   { transform: rotate(0deg); }
+  50%  { transform: rotate(0deg) }
+  100% { transform: rotate(-30deg) translateX(130%)  
+}
+        }
